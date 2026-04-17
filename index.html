@@ -1,33 +1,141 @@
-# Plf — Support
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plf — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fafafa;
+    margin: 0;
+    padding: 2rem 1.25rem 3rem;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0.875rem;
+    margin-bottom: 2rem;
+  }
+  nav { font-size: 0.9375rem; }
+  nav a {
+    display: inline-block;
+    color: #555;
+    text-decoration: none;
+    margin-right: 1.25rem;
+    padding: 0.25rem 0;
+  }
+  nav a:hover { color: #0b4a8f; text-decoration: underline; }
+  nav a[aria-current="page"] { color: #111; font-weight: 600; }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: 2.5rem 0 0.75rem;
+    letter-spacing: -0.005em;
+  }
+  p { margin: 0 0 1rem; }
+  a { color: #0b4a8f; }
+  a:hover { text-decoration: underline; }
+  ol, ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: 0.375rem; }
+  li::marker { color: #888; }
+  strong { font-weight: 600; color: #111; }
+  .faq { margin: 0; }
+  .faq dt {
+    font-weight: 600;
+    color: #111;
+    margin-top: 1.5rem;
+  }
+  .faq dt:first-child { margin-top: 0; }
+  .faq dd {
+    margin: 0.375rem 0 0;
+    padding-left: 0;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #141414; color: #e6e6e6; }
+    header, footer { border-color: #2a2a2a; }
+    nav a { color: #b5b5b5; }
+    nav a:hover { color: #7fb4ec; }
+    nav a[aria-current="page"] { color: #f5f5f5; }
+    h2 { color: #f2f2f2; }
+    a { color: #7fb4ec; }
+    strong, .faq dt { color: #f2f2f2; }
+    li::marker { color: #777; }
+    footer { color: #8b8b8b; }
+  }
+  @media (max-width: 480px) {
+    body { padding: 1.25rem 1rem 2rem; font-size: 16px; }
+    h1 { font-size: 1.625rem; }
+    h2 { font-size: 1.125rem; margin-top: 2rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
 
-Plf is a transit companion app for London. Save the stations and bus stops you use every day, pick your lines and destinations, and see live departures at a glance.
+  <h1>Plf — Support</h1>
 
-## How to use Plf
+  <p>Plf is a transit companion app for London. Save the stations and bus stops you use every day, pick your lines and destinations, and see live departures at a glance.</p>
 
-1. Tap the **+** button on the home screen and choose **Add a view**
-2. Search for any tube station, bus stop, or National Rail station
-3. Select the lines and destinations you want to track
-4. Your saved view will appear as a card on your home screen with live departure times
+  <h2>How to use Plf</h2>
+  <ol>
+    <li>Tap the <strong>+</strong> button on the home screen and choose <strong>Add a view</strong></li>
+    <li>Search for any tube station, bus stop, or National Rail station</li>
+    <li>Select the lines and destinations you want to track</li>
+    <li>Your saved view will appear as a card on your home screen with live departure times</li>
+  </ol>
 
-You can create multiple screens to organise your views — for example, one for your morning commute and another for your evening return.
+  <p>You can create multiple screens to organise your views — for example, one for your morning commute and another for your evening return.</p>
 
-## Frequently asked questions
+  <h2>Frequently asked questions</h2>
+  <dl class="faq">
+    <dt>Why are departure times missing or inaccurate?</dt>
+    <dd>Plf displays real-time data provided by Transport for London and National Rail Enquiries. Occasionally this data may be delayed or unavailable due to issues with the source APIs. This is outside the developer's control.</dd>
 
-**Why are departure times missing or inaccurate?**
-Plf displays real-time data provided by Transport for London and National Rail Enquiries. Occasionally this data may be delayed or unavailable due to issues with the source APIs. This is outside the developer's control.
+    <dt>How do I delete a saved view?</dt>
+    <dd>Long-press on any card to open the context menu, then tap <strong>Delete</strong>.</dd>
 
-**How do I delete a saved view?**
-Long-press on any card to open the context menu, then tap **Delete**.
+    <dt>How do I reorder my saved views?</dt>
+    <dd>Tap the <strong>+</strong> button and choose <strong>Edit screen</strong>, then drag the cards into your preferred order.</dd>
 
-**How do I reorder my saved views?**
-Tap the **+** button and choose **Edit screen**, then drag the cards into your preferred order.
+    <dt>Does Plf track my location?</dt>
+    <dd>No. Plf does not use location services or collect any personal data. See our <a href="privacy.html">Privacy Policy</a> for full details.</dd>
 
-**Does Plf track my location?**
-No. Plf does not use location services or collect any personal data. See our [Privacy Policy](https://claude.ai/chat/privacy.md) for full details.
+    <dt>Is Plf free?</dt>
+    <dd>Yes. Plf is free to download and use.</dd>
+  </dl>
 
-**Is Plf free?**
-Yes. Plf is free to download and use.
+  <h2>Contact</h2>
+  <p>If you need help or have feedback, please get in touch at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
 
-## Contact
-
-If you need help or have feedback, please get in touch at [your-email@example.com](mailto:your-email@example.com).
+  <footer>
+    <p>Plf — a transit companion for London.</p>
+  </footer>
+</main>
+</body>
+</html>
